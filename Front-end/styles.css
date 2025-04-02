@@ -1,0 +1,75 @@
+/* :root variables for consistent theming */
+:root {
+  --background-color: #121212;
+  --card-color: #1E1E1E;
+  --text-color: #FFFFFF;
+  --primary-color: #BB86FC;   /* Example accent color (purple) */
+  --button-hover: #9E67E4;
+  --font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 250px; /* Popup width */
+  min-height: 300px; /* Adjust if needed */
+}
+
+/* Header styling */
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--card-color);
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Main content styling */
+main {
+  padding: 15px;
+}
+
+#status {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Button styling */
+button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  opacity: 0.7;
+  background-color: var(--card-color);
+  border-top: 1px solid #333;
+}
