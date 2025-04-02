@@ -67,3 +67,11 @@ if __name__ == "__main__":
 @app.route('/')
 def home():
     return "Cypher - Fake Website Detector API is running!"
+
+
+import os
+from firebase_admin import credentials, initialize_app
+
+cred_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+cred = credentials.Certificate(cred_path)
+firebase_app = initialize_app(cred)
